@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Dumper Sample</title>
+    <link rel="stylesheet" href='dumper.css' />
+    <script src='dumper.js' type="text/javascript" charset="utf-8"></script>
+    <script type="text/javascript">
+      document.addEventListener('DOMContentLoaded',function(){
+        var json = {
+          "url": "https://github.com/nikopol",
+          "tweet": "The generation of random numbers is too important to be left to chance.- Robert R. Coveyou, Oak Ridge National Laboratory - @CodeWisdom",
+          "array": [1,2,4,8,16],
+          "coord": {
+            "lon": -76.61,
+            "lat": 39.29
+          },
+          "sys": {
+            "message": 0.0441,
+            "country": "United States of America",
+            "sunrise": 1396953525,
+            "sunset": 1397000248
+          },
+          "weather": [
+            {
+              "id": 500,
+              "main": "Rain",
+              "description": "light rain",
+              "icon": "10d"
+            }
+          ],
+          "base": "cmc stations",
+          "main": {
+            "temp": 59.99,
+            "humidity": 58,
+            "pressure": 999,
+            "temp_min": 57,
+            "temp_max": 62.6
+          },
+          "wind": {
+            "speed": 3.33,
+            "gust": 7.2,
+            "deg": 269
+          },
+          "rain": {
+            "1h": 0.25
+          },
+          "clouds": {
+            "all": 12
+          },
+          "dt": 1396974326,
+          "id": 4347778,
+          "name": "Baltimore",
+          "cod": 200
+        };
+        dumper('body',json);
+      });
+    </script>
+  </head>
+  <body></body>
+</html>

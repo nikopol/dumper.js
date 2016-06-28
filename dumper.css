@@ -1,0 +1,103 @@
+/* dumper.css - niko 2016 */
+
+div.dumper {
+  font: normal 12px "Mono";
+  background-color: #444;
+  color: #0cf;
+  font-size: 14px;
+  padding: 8px;
+  border-radius: 4px;
+}
+
+div.dumper.error {
+  color: #f99;
+}
+
+div.dumper a {
+  color: #F8D766 !important;
+}
+
+div.dumper a:hover {
+  color: #F8D766 !important;
+}
+
+div.dumper .key {
+  color: #8BA9C1;
+  font-weight: bold;
+  vertical-align: top;
+}
+
+div.dumper .key:after {
+  content: ': ';
+  color: #0cf;
+}
+
+div.dumper .value {
+  color: #B8B799;
+  display: inline-block;
+  cursor: default;
+  margin-left: 8px;
+  word-break: break-all;
+}
+
+div.dumper .value.numeric {
+  color: #9CCF88;
+}
+
+div.dumper .value.empty {
+  color: #0cf;
+}
+
+div.dumper .value:hover {
+  color: #fff;
+}
+
+div.dumper .item {
+  position: relative;
+}
+
+div.dumper .item:before {
+  position: absolute;
+  content: '- ';
+  left: 2px;
+}
+
+div.dumper .item > div.value {
+  margin-left: 10px;
+}
+
+div.dumper .entry {
+  position: relative;
+  padding-left: 10px;
+  margin-left: 10px;
+  border-left: 1px dotted #666;
+}
+
+div.dumper .entry:hover {
+  border-left: 1px dotted #fff;
+}
+
+div.dumper .entry.foldable:before {
+  content: '▾';
+  color: #888;
+  font-family: sans-serif;
+  position: absolute;
+  display: inline-block;
+  top: 0;
+  left: 2px;
+}
+
+div.dumper .entry.closed {
+  max-height: 21px;
+  overflow: hidden;
+  border-bottom: 1px dotted #666;
+}
+
+div.dumper .entry.closed:before {
+  content: '▸';
+}
+
+div.dumper .entry.closed:hover {
+  color: #fc0;
+  border-bottom: 1px dotted #fff;
+}
