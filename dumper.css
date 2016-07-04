@@ -30,6 +30,7 @@ div.dumper .key {
 div.dumper .key:after {
   content: ': ';
   color: #0cf;
+  vertical-align: top;
 }
 
 div.dumper .value {
@@ -88,7 +89,7 @@ div.dumper .entry.foldable:before {
 }
 
 div.dumper .entry.closed {
-  max-height: 21px;
+  max-height: 16px;
   overflow: hidden;
   border-bottom: 1px dotted #666;
 }

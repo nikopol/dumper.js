@@ -95,6 +95,8 @@ var dumper = (function(){
   };
   fn.fold=function fold(obj){
     if( obj.tagName!='A' ) {
+      var e = window.event;
+      e && e.stopPropagation && e.stopPropagation();
       //toggle 'closed' class
       var css = obj.className.split(/\s+/), idx = css.indexOf('closed');
       if( idx == -1 ) css.push('closed');
