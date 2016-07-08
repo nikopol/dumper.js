@@ -4,7 +4,7 @@ DUMPER.JS 1.0
 
 Yet another tiny vanilla json dump'er for the browser
 
-https://nikopol.github.com/dumper.js/
+https://nikopol.github.io/dumper.js/
 
 **usages**
 
